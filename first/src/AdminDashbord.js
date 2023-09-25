@@ -27,16 +27,19 @@ function AdminDashbord() {
     const [editedProduct, setEditedProduct] = useState(null);
     const [searchQuery, setSearchQuery] = useState("");
 
-    useEffect(() => {
+    function getAllProducts() {
         axios
             .get("http://localhost:3000/products")
             .then((res) => {
                 setApidata(res.data);
-                console.log(res.data);
             })
             .catch((error) => {
                 alert(error);
             });
+    }
+
+    useEffect(() => {
+        getAllProducts()
     }, []);
 
 
@@ -66,9 +69,14 @@ function AdminDashbord() {
 
 
     const handleDelete = (productId) => {
-
-        const updatedApidata = apidata.filter((product) => product.id !== productId);
-        setApidata(updatedApidata);
+        axios
+            .delete(`http://localhost:3000/products/${productId}`)
+            .then((res) => {
+                getAllProducts()
+            })
+            .catch((error) => {
+                alert(error);
+            });
     };
 
 

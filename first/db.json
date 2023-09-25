@@ -1,30 +1,6 @@
 {
   "products": [
     {
-      "category": "men's clothing",
-      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-      "price": 109.95,
-      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-      "rating": {
-        "rate": 3,
-        "count": 130
-      },
-      "image": "https://images.ctfassets.net/hrltx12pl8hq/6faMpUY0LMolAN7ws0ln9e/aab52c1ae29684dc8a7ae9c0d2a3ada5/thumb_july22_02.jpg?fit=fill&w=840&h=473&fm=webp",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "title": "Mens Casual Premium Slim Fit T-Shirts ",
-      "price": 22.3,
-      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-      "rating": {
-        "rate": 4.1,
-        "count": 259
-      }
-    },
-    {
       "id": 3,
       "title": "Mens Cotton Jacket",
       "price": 55.99,
@@ -243,15 +219,14 @@
     },
     {
       "category": "cloth",
-      "title": "hjhj",
-      "price": "67",
+      "title": "dummy",
+      "price": "200",
       "rating": {
-        "rate": 4.7,
+        "rate": 3,
         "count": 130
       },
-      "discription": "vaibhav singh",
-      "image": "https://images.ctfassets.net/hrltx12pl8hq/6faMpUY0LMolAN7ws0ln9e/aab52c1ae29684dc8a7ae9c0d2a3ada5/thumb_july22_02.jpg?fit=fill&w=840&h=473&fm=webp",
-      "id": 21
+      "image": "https://freepngimg.com/thumb/samsung_mobile_phone/5-2-samsung-mobile-phone-png-hd.png",
+      "id": 22
     }
   ]
 }
