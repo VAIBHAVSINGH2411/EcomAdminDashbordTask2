@@ -1,0 +1,25 @@
+.formpostapi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.error404page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.editform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.editformmain {
+  border: 1px solid black;
+  min-width: 300px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px gray;
+}
