@@ -57,14 +57,15 @@ function ItemDetails({ apidata }) {
                         </IconButton>
                     }
                     title={selectedProduct.category}
-                    subheader="September 22, 2023"
+                    subheader="September 26, 2023"
                 />
                 <CardMedia
                     component="img"
                     height="250"
-                    image={selectedProduct.image}
-                    alt="Product Image"
+                    src={`data:image/png;base64, ${selectedProduct.image}`}
+                    alt={selectedProduct.title}
                 />
+
                 <CardContent>
                     <Typography variant="body2" color="text.secondary">
                         {selectedProduct.title}

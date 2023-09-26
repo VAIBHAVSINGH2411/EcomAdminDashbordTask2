@@ -123,27 +123,28 @@ function AdminDashbord() {
                                 <TableCell>{product.title}</TableCell>
                                 <TableCell>{product.price}</TableCell>
                                 <TableCell>
-                                    <img src={product.image} alt={product.title} width="100" height="100" />
+                                    <img src={`data:image/png;base64, ${product.image}`} alt={product.title} width="100" height="100" />
                                 </TableCell>
                                 <TableCell>{renderStars(product.rating.rate)}</TableCell>
                                 <TableCell>
-                                    <Link to={`/edit/${product.id}`} state={{ editedProduct: product }}>
-                                        <Button variant="contained" color="primary">
-                                            <ModeEditOutlineOutlinedIcon></ModeEditOutlineOutlinedIcon> Edit
+                                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        <Link to={`/edit/${product.id}`} state={{ editedProduct: product }}>
+                                            <Button variant="contained" color="primary">
+                                                <ModeEditOutlineOutlinedIcon></ModeEditOutlineOutlinedIcon>
+                                            </Button>
+                                        </Link>
+
+
+                                        <Button variant="contained" color="error" onClick={() => handleDelete(product.id)}>
+                                            <DeleteForeverOutlinedIcon></DeleteForeverOutlinedIcon>
                                         </Button>
-                                    </Link>
 
-
-                                    <Button variant="contained" color="error" onClick={() => handleDelete(product.id)}>
-                                        <DeleteForeverOutlinedIcon></DeleteForeverOutlinedIcon> Delete
-                                    </Button>
-
-                                    <Link to={`/view/${product.id}`} state={{ product }}>
-                                        <Button variant="contained" color="success" sx={{ margin: "2px" }}>
-                                            <VisibilityOutlinedIcon></VisibilityOutlinedIcon>   View
-                                        </Button>
-                                    </Link>
-
+                                        <Link to={`/view/${product.id}`} state={{ product }}>
+                                            <Button variant="contained" color="success" sx={{ margin: "2px" }}>
+                                                <VisibilityOutlinedIcon></VisibilityOutlinedIcon>
+                                            </Button>
+                                        </Link>
+                                    </div>
                                 </TableCell>
                             </TableRow>
                         ))}
